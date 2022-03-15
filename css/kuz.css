@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean');
+
+#gnb {position:absolute;z-index:5;transition:top 0.3s ease;}
+#gnb nav {width:100%;height:100%;overflow:hidden;}
+#gnb nav li {position:relative;float:left;height:100%;}
+#gnb nav li a {display:block;position:absolute;top:0;height:100%;z-index:1;}
+#gnb nav li a:hover, #gnb nav li a.active {z-index:2;}
+#gnb nav li a:before, #gnb nav li a:after {content:'';display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-repeat:no-repeat;-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:transform 0.4s;transform-style:preserve-3d;}
+#gnb nav li a:before {background-position-y:0px;}
+
+.main #gnb {top:710px;left: calc(50% - 627px);width:1258px;height:297px;padding-top:0px;}
+.main #gnb nav li {width:204px;position:relative;}
+.main #gnb nav li a:before, .main #gnb nav li a:after {background-image: url(../image/nav_new2222222.png);}
+.main #gnb nav li a {left:0;width:234px;}
+.main #gnb nav li a:hover:before {transform: rotateY(180deg);}
+.main #gnb nav li a:hover:after {transform: rotateY(360deg);}
+.main #gnb nav li a:after {background-position-y:-300px;transform: rotateY(180deg);}
+.main #gnb nav li.tab0 {display:none;}
+.main #gnb nav li.tab1 a:before, .main #gnb nav li.tab1 a:after {background-position-x:0;}
+.main #gnb nav li.tab2 a:before, .main #gnb nav li.tab2 a:after {background-position-x:-234px;}
+.main #gnb nav li.tab3 a:before, .main #gnb nav li.tab3 a:after {background-position-x:-468px;}
+.main #gnb nav li.tab4 a:before, .main #gnb nav li.tab4 a:after {background-position-x:-702px;}
+.main #gnb nav li.tab5 a:before, .main #gnb nav li.tab5 a:after {background-position-x:-936px;}
+.main #gnb nav li.tab6 a:before, .main #gnb nav li.tab6 a:after {background-position-x:-1170px;}
+.main #gnb nav li.tab3 a span {display:none;position:absolute;top:4px;left:5px;width:97px;height:97px;z-index:5;background: url(../image/nav_new2222222.png) no-repeat;}
